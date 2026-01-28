@@ -9,28 +9,22 @@ Your goal is to add an image selection field to your Teaser component and render
 1.  **Update the Dialog:**
     Open `dialogs/components/teaser.yaml` and add a Link field configured for the DAM.
     ```yaml
-            - name: image
-              class: info.magnolia.ui.form.field.definition.LinkFieldDefinition
-              targetWorkspace: dam
-              appName: assets
-              label: Teaser Image
+        image:
+          $type: damLinkField
+          targetWorkspace: dam
+          appName: assets
+          label: Teaser Image
     ```
 
 2.  **Update the Template Script:**
     Open `templates/components/teaser.ftl`. Use `damfn` to retrieve the asset and its link.
     ```html
-    [#-- Resolve the asset using the stored ID --]
     [#assign asset = damfn.getAsset(content.image!)! /]
-
-    <div class="teaser">
-      [#if asset?has_content]
+    [#if asset?has_content]
         <img src="${asset.link}" alt="${asset.caption!asset.title!''}" />
-      [/#if]
-      <h2>${content.heading!"Default Heading"}</h2>
-      <div class="body">
-        ${content.body!""?no_esc}
-      </div>
-    </div>
+    [#else]
+        <p>No image</p>
+    [/#if]
     ```
 
 3.  **Test it:**
