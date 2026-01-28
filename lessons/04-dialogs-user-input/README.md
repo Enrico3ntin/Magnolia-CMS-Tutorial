@@ -10,14 +10,17 @@ Your goal is to add a text field to your "Hello World" page so an editor can cha
     Create a file at `dialogs/pages/hello-world.yaml`.
     ```yaml
     form:
-      label: Hello World Properties
-      tabs:
-        - name: main
-          label: Main
-          fields:
-            - name: greeting
-              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
-              label: Greeting Message
+      properties:
+        title:
+          $type: textField
+          label: Title
+        greeting:
+          $type: textField
+          label: Greeting
+    footerLayout:
+      $type: defaultEditorActionLayout
+      primaryActions:
+        commit: commit
     ```
 
 2.  **Bind the Dialog to the Template:**
