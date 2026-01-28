@@ -19,25 +19,36 @@ Your goal is to create a "Teaser" component and allow editors to add it to the `
     Create a file at `dialogs/components/teaser.yaml`.
     ```yaml
     form:
-      label: Teaser
-      tabs:
-        - name: main
-          fields:
-            - name: heading
-              class: info.magnolia.ui.form.field.definition.TextFieldDefinition
-              label: Heading
-            - name: body
-              class: info.magnolia.ui.form.field.definition.RichTextFieldDefinition
-              label: Body Text
+      properties:
+        heading:
+          $type: textField
+          label: Heading
+        body:
+          $type: richTextField
+          label: Body Text
+      layout:
+        $type: tabbedLayout
+        tabs:
+          firstTab:
+            label: Teaser
+            fields:
+              - name: heading
+              - name: body
+    footerLayout:
+      $type: defaultEditorActionLayout
+      primaryActions:
+        commit: commit
     ```
 
 3.  **Create the Component Script:**
     Create a file at `templates/components/teaser.ftl`.
     ```html
     <div class="teaser">
-      <h2>${content.heading!"Default Heading"}</h2>
+      <h2>${content.heading!}</h2>
       <div class="body">
-        ${content.body!""?no_esc}
+      [#if content.body?has_content]
+        ${cmsfn.decode(content).body!}
+      [/#if]
       </div>
     </div>
     ```
