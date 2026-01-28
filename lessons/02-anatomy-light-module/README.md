@@ -20,8 +20,7 @@ Your goal is to create your first custom module and see it recognized by Magnoli
     ├── dialogs/
     ├── i18n/
     ├── templates/
-    ├── webresources/
-    └── module.yaml
+    └── webresources/
     ```
 4.  **Check Magnolia:**
     Check your running Magnolia instance console logs or the **Resource Files** app in AdminCentral. You should see a message indicating that the new module has been detected and registered.
@@ -39,7 +38,6 @@ A Light Module is simply a folder on your filesystem that contains configuration
 *   **`webresources/`**: Static assets like CSS, JavaScript, and fonts. These are served directly by Magnolia.
 *   **`decorations/`**: Used to modify definitions from *other* modules without touching their original code.
 *   **`i18n/`**: Translation files (properties files) for your module's UI.
-*   **`module.yaml`**: The descriptor file for your module.
 
 ---
 
