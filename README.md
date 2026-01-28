@@ -24,7 +24,14 @@ Each lesson in this repository is designed to be a self-contained unit following
 
 ## 🚀 Getting Started
 
-*(Instructions on how to set up the Magnolia environment and start the first lesson will be added here)*
+To begin your journey with Magnolia CMS, follow these steps to set up your local environment:
+
+1.  **Install Node.js & NPM:** Ensure you have a recent version of Node.js installed.
+2.  **Install Magnolia CLI:**
+    ```bash
+    npm install -g @magnolia/cli
+    ```
+3.  **Start Lesson 01:** Follow the detailed setup and "Hello World" instructions in **[Lesson 01: Environment Setup & Hello World](lessons/01-environment-setup/README.md)**.
 
 ## 📝 List of Lessons
 
@@ -48,25 +55,25 @@ Each lesson in this repository is designed to be a self-contained unit following
 *   **[Lesson 10: Javascript Models (Business Logic)](lessons/10-javascript-models/README.md)**
 *   **[Lesson 11: Site Definitions & Multi-site](lessons/11-site-definitions/README.md)**
 *   **[Lesson 12: Content Types (Modeling Data)](lessons/12-content-types/README.md)**
-*   **Lesson 13: Content Apps**
+*   **[Lesson 13: Content Apps](lessons/13-content-apps/README.md)**
 
 ### Phase 4: Headless & Modern Frontend 🚀
 
-*   **Lesson 14: Delivery API (Headless JSON)**
-*   **Lesson 15: Visual SPA Editing**
+*   **[Lesson 14: Delivery API (Headless JSON)](lessons/14-delivery-api/README.md)**
+*   **[Lesson 15: Visual SPA Editing](lessons/15-visual-spa-editing/README.md)**
 
 ### Phase 5: Advanced & Enterprise Features 🛡️
 
-*   **Lesson 16: Search & Querying**
-*   **Lesson 17: Internationalization (i18n)**
-*   **Lesson 18: Personalization (Traits)**
+*   **[Lesson 16: Search & Querying](lessons/16-search-querying/README.md)**
+*   **[Lesson 17: Internationalization (i18n)](lessons/17-internationalization/README.md)**
+*   **[Lesson 18: Personalization (Traits)](lessons/18-personalization/README.md)**
 
 ### Phase 6: Architecture & DevOps 🏗️
 
-*   **Lesson 19: Decorators**
-*   **Lesson 20: Virtual URIs**
-*   **Lesson 21: Security & Users**
-*   **Lesson 22: Versioning & Publishing Workflow**
+*   **[Lesson 19: Decorators](lessons/19-decorators/README.md)**
+*   **[Lesson 20: Virtual URIs](lessons/20-virtual-uris/README.md)**
+*   **[Lesson 21: Security & Users](lessons/21-security-users/README.md)**
+*   **[Lesson 22: Versioning & Publishing Workflow](lessons/22-publishing-workflow/README.md)**
 
 ## 🔗 Official documentation links
 
