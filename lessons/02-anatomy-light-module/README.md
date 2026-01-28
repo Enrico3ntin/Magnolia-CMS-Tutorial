@@ -10,7 +10,6 @@ Your goal is to create your first custom module and see it recognized by Magnoli
 2.  **Create the module:**
     Use the CLI to generate the folder structure.
     ```bash
-    cd light-modules
     mgnl create-light-module my-first-module
     ```
 3.  **Verify the structure:**
